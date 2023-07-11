@@ -70,3 +70,11 @@
         transform: translateX(calc(-100% - 10px)); /* Account for margin-right of .movie-item */
     }
 }
+footer {
+    background-color:red;
+    color:white;
+    font-style:bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:40px;
+}
