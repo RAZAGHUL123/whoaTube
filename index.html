@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'CreepyFont';
+            src: url('path/to/creepy-font.woff2') format('woff2'),
+                 url('path/to/creepy-font.woff') format('woff');
+            /* Add more font formats if necessary (e.g., .ttf, .otf) */
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            font-family: 'CreepyFont', sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+            text-align: center;
+            color: black;
+            margin: 10px;
+            position: relative;
+        }
+
+        .profile-img::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .profile-text {
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-size: 24px;
+            color: red;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-img">
+            <a href="index3.html"><img src="https://sportshub.cbsistatic.com/i/2021/09/12/35e6aa54-63bc-4430-b6fa-f047b95b00b0/rick-and-morty-season-5-evil-morty-portal-cliffhanger.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;"></a>
+        </div>
+        <h3 class="profile-text">Profile1</h3>
+        <h1 class="logo">whoaFlix</h1>
+    </div>
+</body>
+</html>

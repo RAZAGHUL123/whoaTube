@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Choices</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your additional CSS styles here */
+    body {
+        background-color:black;
+    }
+    /* Header Styles */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: red;
+      color: #ffffff;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Movie Choices Styles */
+    .movies-container {
+      margin-top: 50px; /* Adjust as needed to make space for the header */
+    }
+
+    .movies-row {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    
+    .movie-item {
+      scroll-snap-align: start;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Click Effect */
+    .movie-item:active {
+      transform: scale(0.95);
+    }
+
+    /* Search Styles */
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .search-button {
+      padding: 5px 10px;
+    }
+    iframe {
+        border:5px red solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="logo">whoaFlix</h1>
+  </div>
+
+  <div class="movies-container">
+    <div class="movies-row">
+      <a href="index4.html" class="movie-item">Terrifier<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp7IM7WVDTKjohwILhqRzFX6pPKCXqpCROlXbQNkYixM3Vr2zh" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>  
+    </div>
+  </div>
+
+  <h6>Movies</h6>
+
+  <div class="movies-container">
+    <div class="movies-row">
+      <a href="" class="movie-item"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp7IM7WVDTKjohwILhqRzFX6pPKCXqpCROlXbQNkYixM3Vr2zh" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>  
+    </div>
+  </div>
+
+  <div class="movies-container">
+    <div class="movies-row">
+      <a href="" class="movie-item"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp7IM7WVDTKjohwILhqRzFX6pPKCXqpCROlXbQNkYixM3Vr2zh" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>
+      <a href="" class="movie-item"><img src="default_image.jpg" alt=""></a>  
+    </div>
+  </div>
+
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search movies...">
+    <button class="search-button">Search</button>
+  </div>
+
+  <script>
+    // Add your JavaScript code here (if any)
+  </script>
+</body>
+</html>
