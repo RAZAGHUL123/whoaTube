@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #007AFF;
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: #FFF;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 15px;
+}
+
+.navigation li:first-child {
+  margin-left: 0;
+}
+
+/* Hero section styles */
+#hero {
+  background-color: #000;
+  padding: 150px 0;
+  text-align: center;
+  color: #FFF;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #FF0000;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #800000;
+}
+
+/* Features section styles */
+#features {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Pricing section styles */
+#pricing {
+  background-color: #F0F0F0;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#pricing h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.pricing-option {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.pricing-option h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing-option ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.pricing-option ul li {
+  margin-bottom: 10px;
+}
+
+/* Testimonials section styles */
+#testimonials {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+cite {
+  font-weight: bold;
+}
+
+/* Signup section styles */
+#signup {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+#signup h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#signup p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+}
+
+form button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #FF0000;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #800000;
+}
+
+/* Footer styles */
+footer {
+  background-color: #FF0000;
+  padding: 20px 0;
+  text-align: center;
+  color: #FFF;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.social-media img:first-child {
+  margin-left: 0;
+}
+
+
+</style>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="whoaflix-logo.png" alt="WhoaFlix Logo">
+      </div>
+      <ul class="navigation">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Experience the Joy of Fewer Choices</h1>
+      <p>WhoaFlix offers a curated selection of limited movies and shows to enhance your viewing experience.</p>
+      <a href="#signup" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="feature">
+      <img src="feature1.png" alt="Feature 1">
+      <h3>Curated Selection</h3>
+      <p>Enjoy a hand-picked collection of movies and shows that have been carefully selected for quality and entertainment value.</p>
+    </div>
+    <div class="feature">
+      <img src="feature2.png" alt="Feature 2">
+      <h3>Unique Experience</h3>
+      <p>Embrace the thrill of limited choices and discover hidden gems that you might have otherwise overlooked.</p>
+    </div>
+    <div class="feature">
+      <img src="feature3.png" alt="Feature 3">
+      <h3>Uninterrupted Viewing</h3>
+      <p>Experience uninterrupted streaming with our ad-free platform, allowing you to immerse yourself in the content.</p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-option">
+      <h3>Basic</h3>
+      <p class="price">$9.99/month</p>
+      <ul>
+        <li>Limited movie selection</li>
+        <li>No HD streaming</li>
+        <li>1 device allowed</li>
+        <li>No offline downloads</li>
+      </ul>
+      <a href="#signup" class="cta-button">Sign Up</a>
+    </div>
+    <div class="pricing-option">
+      <h3>Premium</h3>
+      <p class="price">$14.99/month</p>
+      <ul>
+        <li>Expanded movie collection</li>
+        <li>HD streaming available</li>
+        <li>2 devices allowed</li>
+        <li>Offline downloads</li>
+      </ul>
+      <a href="#signup" class="cta-button">Sign Up</a>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <img src="user1.png" alt="User 1">
+      <blockquote>"WhoaFlix provides a refreshing experience with its limited choices. I no longer spend hours scrolling through an overwhelming catalog of options. Highly recommended!"</blockquote>
+      <cite>- John Doe</cite>
+    </div>
+    <div class="testimonial">
+      <img src="user2.png" alt="User 2">
+      <blockquote>"As a film enthusiast, I appreciate the hand-picked selection on WhoaFlix. It's like having a film festival at my fingertips. Fantastic!"</blockquote>
+      <cite>- Jane Smith</cite>
+    </div>
+  </section>
+
+  <section id="signup">
+    <h2>Join WhoaFlix Today</h2>
+    <p>Sign up now to start enjoying our unique movie-watching experience.</p>
+    <form>
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 WhoaFlix. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

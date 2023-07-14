@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* General styling */
+      body {
+        background-color: black;
+        color: white;
+      }
+      
+      .footer {
+        background-color: red;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Profile box styling */
+      .profile {
+        text-align: center;
+      }
+
+      /* Catalog styling */
+      .catalog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .item {
+        margin: 10px;
+        flex-basis: calc(33.33% - 20px);
+      }
+      
+      /* Responsive design */
+      @media (max-width: 600px) {
+        .item {
+          flex-basis: calc(100% - 20px);
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Profile box -->
+    <div class="profile">
+      <h1 id="name">John Doe</h1>
+      <img id="profile-image" src="image.jpg" alt="Profile Image">
+    </div>
+    
+    <!-- Catalog search -->
+    <input type="text" id="search" placeholder="Search catalog...">
+
+    <!-- Catalog -->
+    <div id="catalog" class="catalog"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Footer content here</p>
+    </div>
+
+    <script>
+      var catalog = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7', 'item8', 'item9', 'item10'];
+      
+      // Function to display the catalog
+      function displayCatalog(items) {
+        var catalogDiv = document.getElementById('catalog');
+        catalogDiv.innerHTML = '';
+        items.forEach(item => {
+          catalogDiv.innerHTML += `<div class="item">${item}</div>`;
+        });
+      }
+      
+      // Function to filter the catalog
+      function filterCatalog() {
+        var search = document.getElementById('search').value;
+        var filtered = catalog.filter(item => item.includes(search));
+        displayCatalog(filtered);
+      }
+
+      // Display full catalog on page load
+      displayCatalog(catalog);
+      
+      // Filter catalog on search input change
+      document.getElementById('search').addEventListener('input', filterCatalog);
+    </script>
+  </body>
+</html>
